@@ -1,0 +1,207 @@
+@import "normalize";
+@import "layout";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:900,700&amp;subset=cyrillic"|OpenSans:400,600&amp;subset=cyrillic"');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic,cyrillic-ext');
+
+$text-color: #757575;
+$primary-color: #292929;
+$light-dark: #353535;
+$link-color: #9fa3a7;
+
+$base-font-family: 'OpenSans', sans-serif;
+$second-font-family: 'Roboto', sans-serif;
+
+body{
+	font: 400 15px/1.5 $base-font-family;
+	color:$text-color;
+
+}
+
+h1,h2,h4,h5,h6{
+	font-family:$base-font-family;
+	color:$primary-color;
+	font-weight:400;
+	line-height:1.2;
+	font-size:36px;
+	letter-spacing:1.5px;
+	margin-bottom:25px;
+
+}
+h3{
+	font-family:$base-font-family;
+	color:$light-dark;
+	font-weight:400;
+	line-height:1.2;
+	letter-spacing:1.5px;
+
+	font-size:22px;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1180px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	text-decoration:none;
+	font-family:$second-font-family;
+	font-weight:700;
+	letter-spacing:2.6px;
+	font-size: 12px;
+	color:$link-color;
+
+	&:hover{
+		color:$primary-color;
+	}
+
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	background:#ffc80a;
+	font-family:$second-font-family;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: center;
+	border-radius: 50px 50px 50px 50px;
+	border:0;
+}
+
+
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+
+textarea {
+
+}
+.ba-header{
+	margin: 29px 0 178px;
+	position:relative;
+}
+.ba-logo-nav{
+	display:flex;
+	justify-content: space-between;
+	margin-bottom:166px;
+}
+.ba-logo{
+	padding-left:80px;
+}
+.ba-nav{
+	display:block;
+}
+.ba-nav-list{
+	display:flex;
+	list-style:none;
+	margin:0 40px 10px;
+
+
+}
+.ba-nav-link{
+	padding-left:60px;
+	font-family:$second-font-family;
+	letter-spacing:2.6px;
+	font-size: 12px;
+	font-weight:700;
+	&a{
+		color:$text-color;
+
+	}
+}
+.ba-product{
+	display:flex;
+	padding-left:80px;
+
+
+}
+.ba-product-info{
+	max-width:347px;
+	margin-right:80px;
+	margin-top:-38px;
+}
+.ba-product-image{
+	display:block;
+	max-width:7200px;
+	margin-right:-47px;
+	margin-top:-10px;
+}
+.ba-button-product{
+	max-width:170px;
+	padding:15px 58px;
+	letter-spacing:1.6px;
+	margin-top:25px;
+	margin-right:55px;
+	color:$primary-color;
+}
+.ba-link-product{
+	color:$primary-color;
+}
+.ba-header-scroll{
+	position:absolute;
+	left:48.7%;
+	transform:translateY(-46px);
+
+}
+.ba-info{
+	margin-bottom:175px;
+}
+.ba-info-container{
+	max-width:831px;
+	margin:0 auto;
+	display:flex;
+}
+.ba-info-container__first{
+	max-width:391px;
+}
+.ba-info-container__second{
+	margin-left:67px;
+	max-width:371px;
+
+}
+.ba-info-container__second__name1:before{
+	content:'';
+	background: url(../img/oclock.png);
+	width:65px;
+	height:65px;
+	display:inline-block;
+}
+.ba-info-container__second__name2:before{
+	content:'';
+	background: url(../img/four.png);
+	width:60px;
+	height:67px;
+	display:inline-block;
+
+}
+
+.ba-characteristic{
+
+	background: url(../img/pil-2.jpg) no-repeat right;
+	padding:150px 0 182px;
+
+
+}
+.ba-characteristic-info{
+	max-width:405px;
+	margin:0 auto;
+}
